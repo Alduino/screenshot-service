@@ -1,0 +1,27 @@
+{
+  "name": "screenshot-cdn",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "dependencies": {
+    "chokidar": "^3.4.0",
+    "clipboardy": "^2.3.0",
+    "dotenv": "^8.2.0",
+    "fs-extra": "^9.0.1",
+    "node-notifier": "^7.0.1",
+    "sharp": "^0.25.4",
+    "simple-git": "^2.6.0",
+    "superagent": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.1",
+    "@types/node": "^14.0.13",
+    "@types/node-notifier": "^6.0.1",
+    "@types/sharp": "^0.25.0",
+    "@types/superagent": "^4.1.7",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  },
+  "scripts": {
+    "start": "ts-node ."
+  }
+}
