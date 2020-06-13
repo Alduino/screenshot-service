@@ -4,7 +4,7 @@ import {notify} from "node-notifier";
 import {createHash} from "crypto";
 import {watch} from "chokidar";
 import {head} from "superagent";
-import {mkdirs, writeFile} from "fs-extra";
+import {mkdirs, rename, writeFile} from "fs-extra";
 import {write as writeToClipboard} from "clipboardy";
 import {config as loadDotenv} from "dotenv";
 
@@ -30,9 +30,12 @@ async function importImage(path: string) {
     await mkdirs("www/f");
     await writeFile(`www/f/${fileName}`, buffer);
 
+    // rename gitignore as this directory is ignored so git won't let us commit
+    await rename(".gitignore", ".gitignore.tmp");
     console.info("Committing change");
     await git.add(`f/${fileName}`);
     await git.commit("add new image");
+    await rename(".gitignore.tmp", ".gitignore");
 
     console.info("Pushing to remote");
     await git.push("origin", "master");
