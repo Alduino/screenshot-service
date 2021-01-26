@@ -7,7 +7,7 @@
     "clipboardy": "^2.3.0",
     "dotenv": "^8.2.0",
     "fs-extra": "^9.0.1",
-    "node-notifier": "^7.0.1",
+    "node-notifier": "^8.0.1",
     "sharp": "^0.25.4",
     "simple-git": "^2.6.0",
     "superagent": "^5.2.2"
