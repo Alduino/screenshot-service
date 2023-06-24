@@ -4,13 +4,13 @@
   "main": "index.ts",
   "dependencies": {
     "chokidar": "^3.4.0",
-    "clipboardy": "^2.3.0",
+    "clipboardy": "^3.0.0",
     "dotenv": "^8.2.0",
     "fs-extra": "^9.0.1",
     "node-notifier": "^8.0.1",
-    "sharp": "^0.25.4",
+    "sharp": "^0.32.1",
     "simple-git": "^3.16.0",
-    "superagent": "^5.2.2"
+    "superagent": "^5.3.1"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.1",
